@@ -12,12 +12,9 @@ bool Visited[MAX][MAX];
 
 int findMax() {
     int max = 0;
-    for (int i = 0; i < N; i++)
-    {
-        for (int j = 0; j < N; j++)
-        {
-            if (MAP_COPIED[i][j] > max)
-            {
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < N; j++) {
+            if (MAP_COPIED[i][j] > max) {
                 max = MAP_COPIED[i][j];
             }
         }
@@ -43,8 +40,8 @@ void moveDown() {
                 }
                 //값이 존재하는 부분의 값을 아래쪽으로 땡기고 옮겨진 위치는 0으로 바꾸기
                 if (check == true) {
-                MAP_COPIED[i][j] = MAP_COPIED[k][j];
-                MAP_COPIED[k][j] = 0;
+                    MAP_COPIED[i][j] = MAP_COPIED[k][j];
+                    MAP_COPIED[k][j] = 0;
                 }
             }
         }
@@ -53,9 +50,9 @@ void moveDown() {
     for (int i = N - 1; i > 0; i--) {
         for (int j = 0; j < N; j++) {   //아래에서부터 위쪽으로 두 칸의 값이 같은 경우
             if  (MAP_COPIED[i][j] == MAP_COPIED[i - 1][j]) {
-            //아래부분으로 값을 몰아서 더하고(2배) 위쪽의 값은 0으로 바꾼다
-            MAP_COPIED[i][j] = MAP_COPIED[i][j] * 2;
-            MAP_COPIED[i - 1][j] = 0;
+                //아래부분으로 값을 몰아서 더하고(2배) 위쪽의 값은 0으로 바꾼다
+                MAP_COPIED[i][j] = MAP_COPIED[i][j] * 2;
+                MAP_COPIED[i - 1][j] = 0;
             }
         }
     }
@@ -77,8 +74,8 @@ void moveDown() {
                 }
                 //값이 존재하는 부분의 값을 아래쪽으로 땡기고 옮겨진 위치는 0으로 바꾸기
                 if (check == true) {
-                MAP_COPIED[i][j] = MAP_COPIED[k][j];
-                MAP_COPIED[k][j] = 0;
+                    MAP_COPIED[i][j] = MAP_COPIED[k][j];
+                    MAP_COPIED[k][j] = 0;
                 }
             }
         }
@@ -104,8 +101,8 @@ void moveUp() {
                 }
                 //값이 존재하는 부분의 값을 위쪽으로 땡기고 옮겨진 위치는 0으로 바꾸기
                 if (check == true) {
-                MAP_COPIED[i][j] = MAP_COPIED[k][j];
-                MAP_COPIED[k][j] = 0;
+                    MAP_COPIED[i][j] = MAP_COPIED[k][j];
+                    MAP_COPIED[k][j] = 0;
                 }
             }
         }
@@ -115,8 +112,8 @@ void moveUp() {
         for (int j = 0; j < N; j++) {   //위에서부터 아래쪽으로 두 칸의 값이 같은 경우
             if (MAP_COPIED[i][j] == MAP_COPIED[i + 1][j]) {
             //위쪽부분으로 값을 몰아서 더하고(2배) 아래쪽의 값은 0으로 바꾼다
-            MAP_COPIED[i][j] = MAP_COPIED[i][j] * 2;
-            MAP_COPIED[i + 1][j] = 0;
+                MAP_COPIED[i][j] = MAP_COPIED[i][j] * 2;
+                MAP_COPIED[i + 1][j] = 0;
             }
         }
     }
@@ -138,8 +135,8 @@ void moveUp() {
                 }
                 //값이 존재하는 부분의 값을 위쪽으로 땡기고 옮겨진 위치는 0으로 바꾸기
                 if (check == true) {
-                MAP_COPIED[i][j] = MAP_COPIED[k][j];
-                MAP_COPIED[k][j] = 0;
+                    MAP_COPIED[i][j] = MAP_COPIED[k][j];
+                    MAP_COPIED[k][j] = 0;
                 }
             }
         }
@@ -157,15 +154,15 @@ void moveLeft() {
             while (k <= N - 1) {
                 //값이 존재하는 부분까지 가서 도달하면 존재한다고 바꾼뒤
                 if (MAP_COPIED[i][k] != 0) {
-                check = true;
-                break;
-                    }
-                    k++;
+                    check = true;
+                    break;
+                }
+                k++;
             }
             //값이 존재하는 부분의 값을 왼쪽으로 땡기고 옮겨진 위치는 0으로 바꾸기
-            if (check == true) {
-            MAP_COPIED[i][j] = MAP_COPIED[i][k];
-            MAP_COPIED[i][k] = 0;
+                if (check == true) {
+                    MAP_COPIED[i][j] = MAP_COPIED[i][k];
+                    MAP_COPIED[i][k] = 0;
                 }
             }
         }
@@ -175,8 +172,8 @@ void moveLeft() {
         for (int j = 0; j < N - 1; j++) {   //왼쪽에서부터 오른쪽으로 두 칸의 값이 같은 경우
             if (MAP_COPIED[i][j] == MAP_COPIED[i][j + 1]) {
             //오른쪽 끝부분으로 값을 몰아서 더하고(2배) 왼쪽의 값은 0으로 바꾼다
-            MAP_COPIED[i][j] = MAP_COPIED[i][j] * 2;
-            MAP_COPIED[i][j + 1] = 0;
+                MAP_COPIED[i][j] = MAP_COPIED[i][j] * 2;
+                MAP_COPIED[i][j + 1] = 0;
             }
         }
     }
@@ -191,8 +188,8 @@ void moveLeft() {
                 while (k <= N - 1) {
                     //값이 존재하는 부분까지 가서 도달하면 존재한다고 바꾼뒤
                     if (MAP_COPIED[i][k] != 0) {
-                    check = true;
-                    break;
+                        check = true;
+                        break;
                     }
                     k++;
                 }
@@ -236,8 +233,8 @@ void moveRight()
         for (int j = N - 1; j > 0; j--) {   //오른쪽에서부터 왼쪽으로 두 칸의 값이 같은 경우
             if (MAP_COPIED[i][j] == MAP_COPIED[i][j - 1]) {
             //오른쪽 끝부분으로 값을 몰아서 더하고(2배) 왼쪽의 값은 0으로 바꾼다
-            MAP_COPIED[i][j] = MAP_COPIED[i][j] * 2;
-            MAP_COPIED[i][j - 1] = 0;
+                MAP_COPIED[i][j] = MAP_COPIED[i][j] * 2;
+                MAP_COPIED[i][j - 1] = 0;
             }
         }
     }
@@ -264,10 +261,8 @@ void moveRight()
 }
 
 void copyMap() {
-    for (int i = 0; i < N; i++)
-    {
-        for (int j = 0; j < N; j++)
-        {
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < N; j++) {
             MAP_COPIED[i][j] = MAP[i][j];
         }
     }
@@ -284,15 +279,14 @@ void selectDirection(int index, int count) {
             else if (direction == 2) moveDown();
             else if (direction == 3) moveUp();
         }
+        Answer = (Answer > findMax()) ? Answer : findMax();
+        
         return;
     }
-
     for (int i = 0; i < 4; i++) {
         Select[count] = i;
         selectDirection(i, count + 1);
     }
-
-    Answer = (Answer > findMax()) ? Answer : findMax();
 }
 
 void solution() {
@@ -313,7 +307,5 @@ int main() {
             cin >> MAP[i][j];
         }
     }
-
     solution();
-
 }
