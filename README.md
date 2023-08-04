@@ -22,5 +22,8 @@
 |2| [14501](https://www.acmicpc.net/problem/14501) | 퇴사 | DP | 2023년 7월 6일 |
 |3| [2630](https://www.acmicpc.net/problem/2630) | 색종이 만들기 | 분할정복 | 2023년 7월 13일 |
 |4| [2644](https://www.acmicpc.net/problem/2644) | 촌수계산 | 그래프탐색 | 2023년 7월 20일 |
+|5| [1976](https://www.acmicpc.net/problem/1976) | 여행 가자 | Union Find | 2023년 7월 27일 |
+|6| [17396](https://www.acmicpc.net/problem/17396) | 백도어 | 최단경로 | 2023년 8월 3일 |
+
 
 
