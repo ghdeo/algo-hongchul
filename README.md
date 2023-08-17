@@ -24,6 +24,8 @@
 |4| [2644](https://www.acmicpc.net/problem/2644) | 촌수계산 | 그래프탐색 | 2023년 7월 20일 |
 |5| [1976](https://www.acmicpc.net/problem/1976) | 여행 가자 | Union Find | 2023년 7월 27일 |
 |6| [17396](https://www.acmicpc.net/problem/17396) | 백도어 | 최단경로 | 2023년 8월 3일 |
-
+|7| [13698](https://www.acmicpc.net/problem/13698) | Hawk eyes | 구현 | 2023년 8월 10일 |
+|8| [13699](https://www.acmicpc.net/problem/13699) | 점화식 | DP | 2023년 8월 10일 |
+|9| [13700](https://www.acmicpc.net/problem/13700) | 완전범죄 | 그래프탐색 | 2023년 8월 10일 |
 
 
