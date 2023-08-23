@@ -27,5 +27,8 @@
 |7| [13698](https://www.acmicpc.net/problem/13698) | Hawk eyes | 구현 | 2023년 8월 10일 |
 |8| [13699](https://www.acmicpc.net/problem/13699) | 점화식 | DP | 2023년 8월 10일 |
 |9| [13700](https://www.acmicpc.net/problem/13700) | 완전범죄 | 그래프탐색 | 2023년 8월 10일 |
+|10| [27494](https://www.acmicpc.net/problem/27494) | 2023년은 검은 토끼의 해 | 브루트포스 | 2023년 8월 17일 |
+|11| [27497](https://www.acmicpc.net/problem/27497) | 알파벳 블록 | 자료구조 | 2023년 8월 17일 |
+|12| [27498](https://www.acmicpc.net/problem/27498) | 연애 혁명 | 그래프탐색 | 2023년 8월 17일 |
 
 
